@@ -1,0 +1,114 @@
+#foto{
+     border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 1px;
+    position: relative;
+    width: 13vw;
+    height: 32vh;
+    margin: auto;
+}
+#nombre{
+    position: relative;
+    font-size: 18px;
+    width: 15vw;
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+}
+
+
+.bloquesizq{
+    /*fondo*/
+    background-color: rgb(200, 198, 198);
+    /*tamaño*/
+    width: 15vw;
+    /*posicionamiento*/ 
+    position: relative;
+    margin:auto;
+    padding: 2.5%;
+        display: grid;
+        place-items:left;
+        justify-content: center;
+        line-height: 1.5; /* más espacio entre líneas */
+}
+
+
+
+#bloquehabilidades{
+/*borde*/
+border: 0px;
+border-bottom: 1px;
+border-top: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;   
+}
+
+.contenedor{
+    width: 18vw;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    margin-left: 5%;
+}
+
+.titulos{
+    font-family: 'Quicksand', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+}
+
+.iconos{
+    
+    width: 2vw;
+    height: 5vh;
+} 
+
+.texto{
+font-family:'Wix Madefor Text', sans-serif;
+}
+
+#informacionpersonal{
+    font-size: 90%;
+}
+.bloque{
+    /*bordes*/
+    border-left: 3px solid grey;
+    /*fondo*/
+    background-color: rgb(255, 255, 255);
+    /*tamaño*/
+    width: 35vw;
+    /*posicionamiento*/ 
+    position: relative;
+    margin:auto;
+    padding: 2%;
+        display: grid;
+        place-items:left;
+}
+
+.subtitulos{
+    font-size: 20px;
+    text-align: left;
+    width: 60%;
+}
+
+.informacion{
+    margin-left: 5%;
+    text-align: left;
+}
+
+.circulos{
+  list-style: none;
+}
+
+.circulos li::before{
+  content: "○";
+  font-size: 1em; /*1em significa el mismo tamaño que la fuente del <li>*/
+  margin-left: 5%;
+  margin-right: 2%;
+}
+
+#experiencia{
+    border-top:2px solid rgb(0, 0, 0);
+}
