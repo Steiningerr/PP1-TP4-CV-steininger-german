@@ -1,40 +1,45 @@
+
+body{
+    background-color: black;
+}
+
 #foto{
      border-color: rgb(0, 0, 0);
     border-style: solid;
     border-width: 1px;
     position: relative;
-    width: 13vw;
-    height: 32vh;
+    width: 100%;
+    height: auto;
+    max-width: 50%;
     margin: auto;
 }
 #nombre{
     position: relative;
     font-size: 18px;
-    width: 15vw;
-text-align: center;
-font-family: 'Quicksand', sans-serif;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: auto;
+    max-width: 100%
 }
 
 
 .bloquesizq{
     /*fondo*/
     background-color: rgb(200, 198, 198);
-    /*tamaño*/
-    width: 90%;
-    height: auto;
-    /*posicionamiento*/ 
+    
     position: relative;
-    margin:auto;
-    padding: 2.5%;
-        display: grid;
-        place-items:left;
-        justify-content: center;
-        line-height: 1.5; /* más espacio entre líneas */
-}
-
-
-
-#bloquehabilidades{
+    margin:0;
+    padding: 0%;
+    display: grid;
+    justify-content: center;
+    font-family: 'Wix Madefor Text', sans-serif;   
+    width: 100%;
+    height: auto;
+    max-width: 100%
+    }
+#bloquehabilidades{ 
 /*borde*/
 border: 0px;
 border-bottom: 1px;
@@ -44,12 +49,14 @@ border-top: 1px;
 }
 
 .contenedor{
-    width: 18vw;
     display:flex;
     align-items: center;
     justify-content: left;
     gap: 10px;
     margin-left: 5%;
+    width: 100%;
+    height: auto;
+    max-width: 100%
 }
 
 .titulos{
@@ -57,46 +64,61 @@ border-top: 1px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0%;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 .iconos{
-    
-    width: 2vw;
-    height: 5vh;
+   width: 100%;
+    height: auto;
+    max-width: 10%
 } 
 
 .texto{
-font-family:'Wix Madefor Text', sans-serif;
+    font-family:'Wix Madefor Text', sans-serif;
+    width: 100%;
+    height: auto;
+    max-width: 100%,
 }
 
 #informacionpersonal{
     font-size: 90%;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
-.bloquegrande{
+.bloque{
     /*bordes*/
     border-left: 3px solid grey;
     /*fondo*/
     background-color: rgb(255, 255, 255);
-    /*tamaño*/
-    width: 90%;
     /*posicionamiento*/ 
     position: relative;
     margin:auto;
-    padding: 2%;
-        display: grid;
-        place-items:left;
+    
+    display: grid;
+    place-items:left;
+    font-family: 'Wix Madefor Text', sans-serif;
+    width: 100%;
+    height: auto;
+    max-width: 100%
 }
 
 .subtitulos{
     font-size: 20px;
     text-align: left;
-    width: 60%;
+   width: 100%;
+    height: auto;
+    max-width: 100%
 }
 
 .informacion{
     margin-left: 5%;
     text-align: left;
+    width: 100%;
+    height: auto;
+    max-width: 100%
 }
 
 .circulos{
@@ -112,36 +134,39 @@ font-family:'Wix Madefor Text', sans-serif;
 
 #experiencia{
     border-top:2px solid rgb(0, 0, 0);
-}
-
-/* Contenedor principal con GRID */
-.grid-container {
     display: grid;
-    grid-template-columns: 1fr; /* Mobile: una sola columna */
-    grid-template-areas:
-        "A"
-        "B";
-    gap: 0px; 
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
-/* Asigno cada área */
-#A {
-    grid-area: A;
-    
-}
+.conteiner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: auto;
+    max-width: 100%
+}   
 
-#B {
-    grid-area: B;
-    
-}
+.item-1 { grid-column: 1; grid-row: 1; }
+.item-2 { grid-column: 1; grid-row: 2; }
+.item-3 { grid-column: 1; grid-row: 3; }
 
-@media (min-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr 2fr; 
-        grid-template-areas:
-            "A B";
-    }
-}
+.item-4 { grid-column: 2; grid-row: 1; }
+.item-5 { grid-column: 2; grid-row: 2; }
+.item-6 { grid-column: 2; grid-row: 3; }
+.item-7 { grid-column: 2; grid-row: 4; }
 
-#c {
+@media (max-width: 150px) {
+  .conteiner {
+    grid-template-columns: 1fr;
+  }
+
+  .item-1 { grid-column: 1; grid-row: 1; }
+  .item-2 { grid-column: 1; grid-row: 2; }
+  .item-3 { grid-column: 1; grid-row: 3; }
+  .item-4 { grid-column: 1; grid-row: 4; }
+  .item-5 { grid-column: 1; grid-row: 5; }
+  .item-6 { grid-column: 1; grid-row: 6; }
+  .item-7 { grid-column: 1; grid-row: 7; }
 }
